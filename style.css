@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: clamp(14px, -1rem + 8.333vw, 26px);  color: #fff;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
@@ -34,6 +34,10 @@ main img {
   width: 100%;
 }
 
+.dark {
+  color: black;
+}
+
 /* ---  Groups & Items --- */
 
 .group {
@@ -60,8 +64,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
-  color: #fff;
+  font-size: clamp(24px, -1rem + 8.333vw, 72px);  color: #fff;
 }
 
 header nav {
@@ -72,6 +75,8 @@ header nav {
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
+
 }
 
 header nav ul li {
@@ -178,4 +183,5 @@ footer p {
     margin: 10px;
     width: 100%;
   }
+
 }
